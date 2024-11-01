@@ -1,0 +1,92 @@
+
+.desc {
+    margin-left: 30px;
+}
+.intro {
+    font-size: 16px;
+}
+.wpcl-option-label {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.wpcl-header {
+    display: block;
+}
+.wpcl-donate {
+    float: right;
+    max-width: 200px;
+    text-align: center;
+}
+.wpcl-donate p {
+    font-size: .8em;
+}
+hr {
+    margin: 20px 0;
+}
+.wpcl-description {
+    float: left;
+    max-width: calc( 100% - 300px);
+}
+
+.directories-list {
+    line-height: 1.9;
+}
+
+.folder {
+    margin:0 20px;
+    display: none;
+    overflow: hidden;
+}
+
+.folder.folder-depth-0,
+.folder.folder-depth-1,
+.folder.folder-depth-2 {
+    display: block;
+}
+
+.folder.opened > .folder{
+    display: block;
+}
+
+.wpcl-control-container {
+    padding-right: 4px;
+}
+
+.wpcl-control-container a.wpcl-control,
+.wpcl-control-container a.wpcl-control:active,
+.wpcl-control-container a.wpcl-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.spacer {
+    padding:0 5px;
+}
+
+.folder input[type="radio"] {
+    margin-top: 0;
+}
+
+.folder > .wpcl-control-container .fa-plus {
+    display: inline-block;
+}
+.folder.opened > .wpcl-control-container .fa-plus {
+    display: none;
+}
+
+.folder > .wpcl-control-container .fa-minus {
+    display: none;
+}
+.folder.opened > .wpcl-control-container .fa-minus {
+    display: inline-block;
+}
+
+@media screen and (max-width:500px) {
+    .wpcl-description,
+    .wpcl-donate {
+        float: none;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
